@@ -2,9 +2,9 @@ import { View, Text, StyleSheet} from "react-native";
 
 export default function Footer(){
     return(
-        <View style={styles.espacamento}>
-            <Text>Leonardo Yuuki - Rm550373</Text>
-            <Text>Daniel Delfin - Rm552184</Text>
+        <View style={styles.footer}>
+            <Text style={styles.txtFooter}>Desnvolvido por LeoYuuki & Daniel Soares</Text>
+            <Text style={styles.txtFooter}> &copy; 2024 Direitos Reservados</Text>
         </View>
     )
 }
@@ -12,7 +12,15 @@ export default function Footer(){
 
 const styles = StyleSheet.create({
 
-    espacamento:{
-        marginTop: 600
-    }
+    footer:{
+        marginTop: 20,
+        backgroundColor: '#8d4925',
+    },
+    txtFooter: {
+        textAlign: 'center',
+        color: '#d2c7ba',
+        fontSize: 14,
+        padding: 2,
+      },
+    
 })
