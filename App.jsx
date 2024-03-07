@@ -1,8 +1,10 @@
 import { StyleSheet, Text, View, SafeAreaView, ScrollView, StatusBar, Image } from "react-native";
 
+
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import BenefitsSection from "./components/Benefits";
+import MuscleSection from "./components/Musculo";
 
 
 
@@ -37,7 +39,8 @@ export default function App() {
           <View style={styles.section2}>
 
             <View>
-              <Text style={[styles.txtSection2, {borderBottomWidth: 2, }]}>Selecione o Seu Treino</Text>
+              <View style={styles.lineUnderElement} />
+              <Text style={[styles.txtSection2, { borderBottomWidth: 2, }]}>Selecione o Seu Treino</Text>
             </View>
             <View style={styles.tiposTreino}>
               <View style={styles.containerTreino}>
@@ -71,7 +74,12 @@ export default function App() {
 
             </View>
             <View style={{ flexDirection: 'row', justifyContent: 'flex-end', marginTop: 25 }}>
-              <Text style={[styles.txtSection2, { borderTopWidth: 2, textAlign: 'end' }]}>Escolha e comece agora !</Text>
+
+              <View>
+                <View style={[styles.lineAboveElement,{width:'100%'}]} />
+                <Text style={[styles.txtSection2, { textAlign: 'right' }]}>Escolha e comece agora !</Text>
+              </View>
+
             </View>
           </View>
 
@@ -79,6 +87,7 @@ export default function App() {
 
           <BenefitsSection />
 
+          <MuscleSection />
           <Footer />
         </SafeAreaView>
       </ScrollView>
@@ -134,15 +143,27 @@ const styles = StyleSheet.create({
 
   },
   txtSection2: {
-    width: '56%',
     fontSize: 15,
     fontWeight: '600',
     color: '#46301c',
     marginLeft: 10,
-    borderColor: '#53402e8d',
 
   },
+  lineAboveElement: {
+    height: 1, // Espessura da linha
+    width: '100%', // Largura da linha
+    backgroundColor: 'black', // Cor da linha
+    marginBottom: 10, // Espaço abaixo da linha
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+  },
+  lineUnderElement: {
 
+    height: 1, // Espessura da linha
+    width: '56%', // Largura da linha
+    backgroundColor: 'black', // Cor da linha
+    marginTop: 10, // Espaço abaixo da linha
+  },
 
   tiposTreino: {
     flexDirection: 'row',
