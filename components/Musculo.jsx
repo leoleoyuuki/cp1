@@ -8,7 +8,8 @@ const MuscleSection = () => {
     {
       muscle: 'Peito',
       videos: [
-        { videoId: 'jzD_yyEcp0M', description: 'Exercício para peito: Press de banco' },
+        { videoId: 'xpRnpOeS-lY', description: 'Exercício para peito: Press de banco' },
+        { videoId: 'videoID2', description: 'Exercício para peito: Press inclinado' },
         { videoId: 'videoID2', description: 'Exercício para peito: Press inclinado' },
       ],
     },
@@ -17,9 +18,42 @@ const MuscleSection = () => {
       videos: [
         { videoId: 'videoID3', description: 'Exercício para costas: Remada com barra' },
         { videoId: 'videoID4', description: 'Exercício para costas: Pulldown com barra' },
+        { videoId: 'videoID4', description: 'Exercício para costas: Pulldown com barra' },
+        
       ],
     },
-    // Adicione mais partes musculares conforme necessário
+    {
+      muscle: 'Abdomen',
+      videos: [
+        { videoId: 'videoID3', description: 'Exercício para Abdomen: Remada com barra' },
+        { videoId: 'videoID4', description: 'Exercício para Abdomen: Pulldown com barra' },
+        { videoId: 'videoID4', description: 'Exercício para Abdomen: Pulldown com barra' },
+      ],
+    },
+    {
+      muscle: 'Perna',
+      videos: [
+        { videoId: 'videoID3', description: 'Exercício para Perna: Remada com barra' },
+        { videoId: 'videoID4', description: 'Exercício para Perna: Pulldown com barra' },
+        { videoId: 'videoID4', description: 'Exercício para Perna: Pulldown com barra' },
+      ],
+    },
+    {
+      muscle: 'Ombro',
+      videos: [
+        { videoId: 'videoID3', description: 'Exercício para Ombro: Remada com barra' },
+        { videoId: 'videoID4', description: 'Exercício para Ombro: Pulldown com barra' },
+        { videoId: 'videoID4', description: 'Exercício para Ombro: Pulldown com barra' },
+      ],
+    },
+    {
+      muscle: 'Braço',
+      videos: [
+        { videoId: 'videoID3', description: 'Exercício para Braço: Remada com barra' },
+        { videoId: 'videoID4', description: 'Exercício para Braço: Pulldown com barra' },
+        { videoId: 'videoID4', description: 'Exercício para Braço: Pulldown com barra' },
+      ],
+    },
  ];
 
  return (
@@ -67,6 +101,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
  },
  videoItem: {
+    width: 300,
     marginRight: 10,
     borderBottomWidth: 1, // Adiciona uma linha na parte inferior de cada item
     borderBottomColor: '#ddd', // Define a cor da linha

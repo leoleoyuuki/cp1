@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import BenefitsSection from "./components/Benefits";
 import MuscleSection from "./components/Musculo";
-
+import ShortVideo from "./components/Shorts";
 
 
 export default function App() {
@@ -40,7 +40,7 @@ export default function App() {
 
             <View>
               <View style={styles.lineUnderElement} />
-              <Text style={[styles.txtSection2, { borderBottomWidth: 2, }]}>Selecione o Seu Treino</Text>
+              <Text style={styles.txtSection2}>Selecione o Seu Treino</Text>
             </View>
             <View style={styles.tiposTreino}>
               <View style={styles.containerTreino}>
@@ -84,7 +84,7 @@ export default function App() {
           </View>
 
 
-
+          <ShortVideo />
           <BenefitsSection />
 
           <MuscleSection />
@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
   },
   lineAboveElement: {
     height: 1, // Espessura da linha
-    width: '100%', // Largura da linha
+    width: '56%', // Largura da linha
     backgroundColor: 'black', // Cor da linha
     marginBottom: 10, // Espaço abaixo da linha
     flexDirection: 'row',
@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
     height: 1, // Espessura da linha
     width: '56%', // Largura da linha
     backgroundColor: 'black', // Cor da linha
-    marginTop: 10, // Espaço abaixo da linha
+    marginBottom: 10, // Espaço abaixo da linha
   },
 
   tiposTreino: {
