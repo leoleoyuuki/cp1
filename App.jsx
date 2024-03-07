@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, SafeAreaView, ScrollView, StatusBar, Image } fr
 
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import BenefitsSection from "./components/Benefits";
 
 
 
@@ -76,6 +77,7 @@ export default function App() {
 
 
 
+          <BenefitsSection />
 
           <Footer />
         </SafeAreaView>

@@ -14,6 +14,7 @@ const styles = StyleSheet.create({
 
     footer:{
         marginTop: 20,
+        padding: 7,
         backgroundColor: '#8d4925',
     },
     txtFooter: {
