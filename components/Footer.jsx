@@ -6,7 +6,7 @@ export default function Footer() {
         <View style={styles.footer}>
             <View style={styles.viewHeader}>
             <Image style={styles.icon} source={require('../assets/logo.png')}/>
-            <Text style={[styles.textLogo,{paddingRight:20, color:'#fff'}]}>amendoa<Text style={{color:'#ff4600',}}>Workout</Text></Text>
+            <Text style={[styles.textLogo,{paddingRight:20, color:'#fff'}]}>Women's<Text style={{color:'#ff4600',}}>Workout</Text></Text>
         </View>
             <Text style={styles.txtFooter}>Desenvolvido por LeoYuuki & Daniel Soares</Text>
             <Text style={[styles.txtFooter, {color: '#ff4400c6'}]}>&copy; 2024 Direitos Reservados</Text>

@@ -12,7 +12,7 @@ import YoutubePlayer from 'react-native-youtube-iframe';
 
 export default function App() {
 
-  
+
   const sections = [
     {
       muscle: 'Peito',
@@ -94,7 +94,7 @@ export default function App() {
       }
     }
   };
-  
+
 
 
   return (
@@ -118,6 +118,10 @@ export default function App() {
               style={styles.heroImage}
               resizeMode="cover"
             />
+            <View style={styles.heroContent}>
+              <Text style={styles.heroTitle}>Women's Workout</Text>
+              <Text style={styles.heroSubtitle}>Te ajudamos a ter o seu corpo dos sonhos</Text>
+            </View>
 
           </View>
 
@@ -227,11 +231,11 @@ export default function App() {
             </View>
           </ScrollView>
 
-          <View style={{alignItems:'center'}}>
-            <View style={{width: '55%', backgroundColor:'#968e8b', height: 1}} />
+          <View style={{ alignItems: 'center' }}>
+            <View style={{ width: '55%', backgroundColor: '#968e8b', height: 1 }} />
           </View>
           <Footer />
-          
+
         </SafeAreaView>
       </ScrollView>
     </View>
@@ -242,12 +246,30 @@ const styles = StyleSheet.create({
 
   txtWorkouts: {
     textAlign: 'center',
-    color: '#ffffff',
+    color: '#fff',
     fontSize: 12,
     padding: 2,
 
   },
 
+  heroContent: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 20,
+    bottom: 200,
+    justifyContent: 'center',
+    alignItems: 'flex-end',
+  },
+
+  heroSubtitle: {
+    textAlign: 'right',
+    fontSize: 18,
+    fontWeight: 'normal',
+    color: '#ff4400',
+    width: '62%',
+    marginBottom: 20,
+  },
   viewHeader: {
     width: '100%',
     backgroundColor: '#141312',
@@ -264,20 +286,18 @@ const styles = StyleSheet.create({
   heroImage: {
     width: '100%',
     height: 450,
-    
+
   },
 
   heroTitle: {
-    fontSize: 18,
-    textAlign: 'center',
+    fontSize: 22,
+    textAlign: 'right',
     fontWeight: 'bold',
-    color: '#FFF',
+    color: '#ff4600',
     marginBottom: 10,
-    textShadowColor: '#46301ca3',
-    textShadowOffset: { width: 1, height: 2 },
-    textShadowRadius: 2,
+
   },
-  
+
   section2: {
     paddingTop: 30,
 
@@ -300,9 +320,9 @@ const styles = StyleSheet.create({
   lineUnderElement: {
 
     height: 1,
-    width: '56%', 
-    backgroundColor: '#ff4600', 
-    marginBottom: 10, 
+    width: '56%',
+    backgroundColor: '#ff4600',
+    marginBottom: 10,
   },
 
   tiposTreino: {
@@ -365,7 +385,7 @@ const styleMusculos = StyleSheet.create({
     marginRight: 10,
     borderBottomWidth: 1,
     borderBottomColor: '#ddd',
-    
+
   },
   itemWithDivider: {
     borderBottomWidth: 1,
