@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 const BenefitsSection = () => {
- return (
+  return (
     <View style={styles.container}>
       <Text style={styles.title}>Benefícios de Treinar Todos os Músculos</Text>
       <Text style={styles.benefit}>
@@ -20,27 +20,35 @@ const BenefitsSection = () => {
       <Text style={styles.benefit}>
         - Prevenção de Lesões: A prática de musculação sob orientação de um profissional de educação física garante que os movimentos estejam corretos, prevenindo lesões.
       </Text>
+      <View style={styles.lineElement} />
+
     </View>
- );
+  );
 };
 
 const styles = StyleSheet.create({
- container: {
+  container: {
     padding: 20,
-    backgroundColor:'#eabd79',
+    backgroundColor: '#000',
     marginTop: 20,
- },
- title: {
+  },
+  title: {
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 10,
-    color: '#46301c',
- },
- benefit: {
+    color: '#ff4600',
+  },
+  benefit: {
     fontSize: 16,
     marginBottom: 10,
-    color: '#46301cd9',
- },
+    color: '#ff4600b3',
+  },
+  lineElement: {
+    height: 1, // Espessura da linha
+    width: '56%', // Largura da linha
+    backgroundColor: 'black', // Cor da linha
+    marginTop: 30, // Espaço abaixo da linha
+  },
 });
 
 export default BenefitsSection;

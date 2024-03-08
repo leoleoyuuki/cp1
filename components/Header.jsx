@@ -1,17 +1,19 @@
 import {View, Image, StyleSheet, Text} from 'react-native'
 
 export default function Header(){
+
+    
     return(
         <View style={styles.viewHeader}>
             <Image style={styles.imgLogo} source={require('../assets/logo.png')}/>
-            <Text style={[styles.textLogo,{paddingRight:20}]}>amendoa<Text style={{color:'#b46e2d',}}>Workout</Text></Text>
+            <Text style={[styles.textLogo,{paddingRight:20}]}>amendoa<Text style={{color:'#ff4600',}}>Workout</Text></Text>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     viewHeader:{
-        backgroundColor:'#46301c',
+        backgroundColor:'#000',
         flexDirection: 'row',
         gap: 5,
         alignItems: 'center',
